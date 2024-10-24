@@ -1,0 +1,125 @@
+{
+    "status": "ok",
+    "data": {
+        "premium_support_overview": {
+            "open_cases": {
+                "count": 30,
+                "total": 60,
+                "percentage": 50
+            },
+            "cases_in_progress": {
+                "count": 20,
+                "total": 60,
+                "percentage": 50
+            },
+            "closed_cases": {
+                "count": 10,
+                "total": 60,
+                "percentage": 50
+            }
+        },
+        "total_cases_by_priority": {
+            "P1": {
+                "total_cases": 22,
+                "solved_cases": 5,
+                "solved_percentage": 100
+            },
+            "P2": {
+                "total_cases": 22,
+                "solved_cases": 6,
+                "solved_percentage": 100
+            },
+            "P3": {
+                "total_cases": 22,
+                "solved_cases": 8,
+                "solved_percentage": 89
+            },
+            "P4": {
+                "total_cases": 0,
+                "solved_cases": 0,
+                "solved_percentage": 0
+            }
+        },
+        "notification_delivery_sla": {
+            "average_notifications_in_sla": {
+                "current_period": 23478,
+                "previous_period": 23440,
+                "percentage_change": 15
+            },
+            "average_percentage_in_sla": {
+                "current_period": 99.996,
+                "previous_period": 99.99,
+                "percentage_change": 25
+            }
+        },
+        "web_application_sla": {
+            "monthly_sla": {
+                "January": 97,
+                "February": 99,
+                "March": 99,
+                "April": 99,
+                "May": 97,
+                "June": 97,
+                "July": 98,
+                "August": 99,
+                "September": 98,
+                "October": 98,
+                "November": null,
+                "December": null
+            },
+            "success_rate_average": {
+                "current_period": 99.996,
+                "previous_period": 99.99,
+                "percentage_change": 25
+            }
+        },
+        "premium_customer_success_support": {
+            "global_average_first_response_time": {
+                "P1": 250,
+                "P2": 300,
+                "P3": 189,
+                "P4": 156
+            },
+            "total_average_first_response_time": {
+                "current_period": 234,
+                "previous_period": 250,
+                "percentage_change": 25
+            }
+        },
+        "tickets_per_status": {
+            "total_tickets": {
+                "solved": 150,
+                "on_hold": 50,
+                "closed": 50
+            },
+            "total_tickets_by_period": {
+                "current_period": 250,
+                "previous_period": 310,
+                "percentage_change": -15
+            }
+        },
+        "platform_bug_backlog": {
+            "total_backlog": {
+                "current_period": 323,
+                "previous_period": 301,
+                "percentage_change": 25
+            },
+            "bug_backlog_resolutions": {
+                "percentage": 99.9
+            }
+        },
+        "new_features": {
+            "total_new_features": {
+                "current_period": 8,
+                "previous_period": 5,
+                "percentage_change": 15
+            },
+            "categories": [
+                "Automation",
+                "Business response",
+                "Core",
+                "Data Export"
+            ]
+        }
+    }
+}

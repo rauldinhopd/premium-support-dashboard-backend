@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Define a function to show help options
+show_help() {
+    echo "Usage: ./start [option]"
+    echo ""
+    echo "Options:"
+    echo "  --help          Show this help message"
+    echo "  --locust        Start both Locust and FastAPI servers"
+    echo "  (no options)    Start Uvicorn server with FastAPI"
+}
+
+# Check the argument passed to the script
+if [ "$1" == "--locust" ]; then
+    echo "Starting Uvicorn (FastAPI) and Locust servers..."
+
+    # Start Uvicorn (FastAPI) in the background
+    uvicorn main:app --reload &
+    uvicorn_pid=$!
+
+    # Start Locust server
+    locust -f performance_tests/locust.py --host=http://localhost:8000 &
+    locust_pid=$!
+
+    # Wait for both processes to finish
+    wait $uvicorn_pid $locust_pid
+elif [ "$1" == "--help" ]; then
+    show_help
+else
+    echo "Starting Uvicorn server..."
+    uvicorn main:app --reload
+fi
