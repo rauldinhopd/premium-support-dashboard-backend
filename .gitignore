@@ -1,0 +1,101 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment folder
+.venv/
+env/
+venv/
+ENV/
+
+# Cache files and logs
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+db.sqlite3
+db.sqlite
+*.pdb
+*.h5
+*.hdf5
+*.log
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Poetry
+poetry.lock
+poetry.toml
+
+# Pyre type checker
+.pyre/
+
+# Mypy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+*.pytest_cache/
+
+# Jupyter Notebook files
+.ipynb_checkpoints
+
+# Environments
+.env
+.env.*
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Build files and directories
+build/
+dist/
+*.egg-info/
+
+# Docker files
+docker-compose.override.yml
+*.env
+Dockerfile*
+
+# macOS specific files
+.DS_Store
+
+# Test coverage reports
+coverage/
+*.cover
+*.coverage
+coverage.xml
+
+# Locust files
+locustfile.py
+.locust/
+
+# Supervisor logs
+supervisor.log
+
+# SQLAlchemy migration files (Alembic)
+migrations/
+alembic/
+
+# Python virtual environment
+*.venv/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Logs from FastAPI (if using logging)
+*.log
+
+# PyCharm
+.idea/
